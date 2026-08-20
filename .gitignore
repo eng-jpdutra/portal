@@ -1,0 +1,40 @@
+# ── Segredos e configuração local ─────────────────────────────
+.env
+.env.*
+!.env.example
+appsettings.*.local.json
+secrets/
+*.local
+
+# Chaves e certificados
+*.pem
+*.key
+
+# ── Backend .NET ──────────────────────────────────────────────
+bin/
+obj/
+*.user
+*.db
+*.db-shm
+*.db-wal
+uploads/
+
+# ── Frontend React / Node ─────────────────────────────────────
+node_modules/
+dist/
+npm-debug.log*
+yarn-error.log*
+
+# ── Claude Code ───────────────────────────────────────────────
+.claude/settings.local.json
+
+# ── Sistema operacional ───────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editores / IDEs ───────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.vs/
